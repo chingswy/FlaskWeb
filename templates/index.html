@@ -1,9 +1,8 @@
-<html>
-  <head>
-    <title>真人裸聊直播间</title>
-  </head>
-  <body>
-    <h1>真人裸聊直播间</h1>
-    <img src="{{ url_for('video_feed') }}">
-  </body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+    真人裸聊直播间
+{% endblock %}
+
+{% block pagecontent %}
+<p style="text-align:center"><img src="{{ url_for('video_feed') }}" width="200" height="200"></p>
+{% endblock %}
